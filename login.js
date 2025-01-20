@@ -16,7 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         document.getElementById('response').innerText = 'Efetuando login...';
 
         // Envia o request de login usando axios
-        const response = await axios.post('https://192.168.0.55:3000/auth/login', payload);
+        const response = await axios.post('https://0.0.0.0:3000/auth/login', payload);
         token = response.data.access_token;  // Armazena o token
 
         // Armazena o token e o username no localStorage
