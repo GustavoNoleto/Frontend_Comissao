@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
     if (token && username) {
         try {
-            const response = await axios.get(`https://0.0.0.0:5000/4Shark/Resumo/${username}`, {
+            const response = await axios.get(`https://10.10.1.142:5000/4Shark/Resumo/${username}`, {
                 headers: {
                     'Authorization': `Bearer ${token}`
                 }
