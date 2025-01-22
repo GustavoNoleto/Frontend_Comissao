@@ -34,11 +34,10 @@ document.addEventListener('DOMContentLoaded', async function() {
                 const linha = document.createElement('tr');
 
                 linha.innerHTML = `
-                    <td>${dado.Nr_OS}</td>
                     <td>${new Date(dado.Dt_Emissao).toLocaleDateString()}</td>
                     <td>${dado.Tecnico}</td>
                     <td>${dado.Descrição}</td>
-                    <td>R$ ${dado.valor_unitario.toFixed(2)}</td>
+                    <td>R$ ${dado.valor_unitario}</td>
                 `;
 
                 tabela.appendChild(linha);
